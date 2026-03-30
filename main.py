@@ -11,18 +11,7 @@ st.title("💊 Dashboard Farmácia - Gestão de Saúde")
 # -------------------------------
 # CONEXÃO COM BANCO (SQL SERVER)
 # -------------------------------
-@st.cache_resource
-def conectar():
-    conn = pyodbc.connect(
-        "DRIVER={PostgreSQL Unicode(x64)};"
-        "SERVER=windows.vivver.com;port=5432;"
-        "DATABASE=estatisticas_db;"
-        "UID=vivver;"
-        "PWD=vivver@123"
-    )
-    return conn
 
-conn = conectar()
 
 # -------------------------------
 # CARREGAR DADOS
